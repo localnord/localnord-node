@@ -1,0 +1,60 @@
+{
+  "name": "localnord",
+  "version": "0.1.0",
+  "description": "Official TypeScript client for the Localnord API: manage Google Business Profile listings, reviews and posts.",
+  "keywords": [
+    "google-business-profile",
+    "google-my-business",
+    "gmb",
+    "google-reviews",
+    "local-seo",
+    "localnord",
+    "api-client",
+    "sdk"
+  ],
+  "homepage": "https://github.com/localnord/localnord-node#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/localnord/localnord-node.git"
+  },
+  "bugs": "https://github.com/localnord/localnord-node/issues",
+  "license": "MIT",
+  "author": "Localnord <support@localnord.io> (https://www.localnord.io)",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepare": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "example": "tsx"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.0",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.3",
+    "vitest": "^4.1.0"
+  }
+}
