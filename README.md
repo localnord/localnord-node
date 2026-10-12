@@ -30,10 +30,10 @@ export LOCALNORD_API_KEY=lnk_...
 ## 2. Install
 
 ```bash
-npm install localnord
+npm install github:localnord/localnord-node
 ```
 
-Node.js 20 or later.
+Node.js 20 or later. The package builds itself on install.
 
 ## 3. Use it
 
